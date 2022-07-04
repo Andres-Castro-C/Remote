@@ -1,5 +1,5 @@
 /* ----- RETO DE TRABAJR CON API ------- */
-const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;;
+const XMLHttpRequest = require('xmlhttprequest').XMLHttpRequest;
 const API = 'https://api.escuelajs.co/api/v1';
 
 function fetchData(urlApi, callback) {
@@ -22,7 +22,7 @@ fetchData(`${API}/products`, function (error1, data1) {
     if(error1) return console.error(error1);
     fetchData(`${API}/products/${data1[0].id}`, function (erro2, data2) {
         if(erro2) return console.error(error2);
-        fetchData(`${API}/categories/${data2?.category.id}`, function (erro3, data3){
+        fetchData(`${API}/categories/${data2.category.id}`, function (erro3, data3){
             if(erro3) return console.error(error3);
             console.log(data1[0]);
             console.log(data2.title);
