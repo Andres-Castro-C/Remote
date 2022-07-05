@@ -11,9 +11,10 @@
   "author": "Andres Castro",
   "license": "MIT",
   "dependencies": {
+    "node-fetch": "^3.2.6",
     "xmlhttprequest": "^1.8.0"
   },
-  "devDependencies": {},
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Andres-Castro-C/Sincronismo-JavaScript.git"
